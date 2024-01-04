@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Grievance and Redressal System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('path/to/your/image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: black;
+
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            margin: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .logo{
+            width: 300px;
+            padding: 30px;
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+            margin-top: 2px;
+            box-shadow: 0px 0px 10px 0px grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://lavasa.christuniversity.in/images/logo.png" alt="Logo" class="logo">
+    </div>
+    <header>
+        <h1>University Grievance and Redressal System</h1>
+    </header>
+
+    <section>
+        <form id="grievanceForm">
+            <label for="registernumber">Register Number:</label>
+            <input type="text" id="registernumber" name="registernumber" required>
+            
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="category">Grievance Category:</label>
+            <select id="category" name="category" required>
+                <option value="academic">Academic</option>
+                <option value="administrative">Administrative</option>
+                <option value="facilities">Campus Facilities</option>
+                <option value="certificates/documents">Certificates/Documents</option>
+                <option value="internet">Internet/Wifi</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit Grievance</button>
+        </form>
+    </section>
+
+</body>
+</html>
